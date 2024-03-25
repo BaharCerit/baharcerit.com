@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bahar's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="stylesheet" href="assets/style.css" />
     <link
       rel="stylesheet"
@@ -372,11 +374,14 @@
               <a href="#">Project Developed</a
               ><span><i class="fa-solid fa-rocket"></i></span>
             </li>
-            <button class="btn-filled-dark">
+            <button class="btn-filled-dark"  data-bs-toggle="modal" data-bs-target="#education-Lewagon-Modal">
               <span class="material-symbols-outlined">
                 <i class="fa-solid fa-circle-info"></i> See Details
               </span>
             </button>
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Launch demo modal
+            </button> -->
           </ul>
         </li>
         <li class="card-large card-dark card-wide" id="serv-board">
@@ -535,7 +540,7 @@
             </li>
             <button class="btn-filled-dark">
               <span class="material-symbols-outlined">
-                <i class="fa-solid fa-circle-info"></i> See Details
+              See Details
               </span>
             </button>
           </ul>
@@ -572,7 +577,7 @@
             </li>
             <button class="btn-filled-dark">
               <span class="material-symbols-outlined">
-                <i class="fa-solid fa-circle-info"></i> See Details
+              See Details
               </span>
             </button>
           </ul>
@@ -603,7 +608,7 @@
             </li>
             <button class="btn-filled-dark">
               <span class="material-symbols-outlined">
-                <i class="fa-solid fa-circle-info"></i> See Details
+              See Details
               </span>
             </button>
           </ul>
@@ -655,5 +660,128 @@
 
       </ul>
     </footer>
+    
+    <div class="modal fade" id="education-Lewagon-Modal" tabindex="-1" aria-labelledby="educationLewagonModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <section class="hero-lewagon">
+              <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" />
+                  </a>
+                  <h3>Le Wagon Full-Stack Web Development Bootcamp</h3>
+                </div>
+              </div>
+
+              <div class="btn-group">
+                <button class="btn-filled-dark" style="max-height: 40px;">
+                  <a href="https://www.lewagon.com/web-development-course" target="_blank" class="resume-button"><span class="material-symbols-outlined">LeWagon Amsterdam</span></a>
+                </button>
+              </div>
+            </section>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          </div>
+          <div class="modal-body">
+            <div class="lewagon-introduction-modal">
+            </div>
+            <div class="technical-proficiencies-modal">
+              <section>
+                <h2>My participation in the Le Wagon Full Stack Web Development Bootcamp was a turning point in my career, shaping me into a proficient full-stack web developer. Throughout the program, I acquired fundamental skills and was encouraged to gain real-world experience through its practical approach.</h2>
+
+                <ul class="services">
+                  <li class="card-large card-dark card-wide" id="serv-ux">
+                    <div class="card-image">
+                      <img
+                      src="assets/images/3d-casual-life-web-design-program-on-computer-screen.png"
+                      />
+                    </div>
+                    <ul>
+                      Technical Proficiencies
+                      <li>
+                        <a href="#">During my time at Le Wagon's 9-week full-time intensive coding bootcamp, I had the opportunity to collaborate closely with a team of four talented individuals. Together, we immersed ourselves in a diverse range of technologies, including HTML, CSS, JavaScript, Bootstrap, SQL, GitHub, Git, Heroku, and Ruby on Rails. Through hands-on projects and collaborative learning, we gained proficiency in both front-end and back-end development.</a>
+                      </li>
+                      <li><a href="#">One notable achievement during the bootcamp was the successful completion and deployment of a clone of Airbnb. This project not only allowed us to apply our technical skills but also provided valuable experience in project management and deployment processes.</a>
+                      </li>
+                      <li>
+                        <a href="#">Additionally, we worked together on a web application called Hobby Buddy. In just two weeks, we conceptualized, developed, and launched the application, demonstrating our ability to work efficiently and effectively as a team.</a>
+                      </li>
+                      <li>
+                        <a href="#">Overall, my experience at Le Wagon equipped me with the knowledge, skills, and confidence to tackle complex challenges in the field of web development, while also highlighting the importance of collaboration and teamwork.</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </section>
+            </div>
+
+            <div class="teamwork-and-communication-modal">
+              <section>
+                <ul class="services">
+                  <li class="card-large card-dark card-wide" id="serv-ux">
+                    <ul>
+                      Teamwork and Communication
+                      <li>
+                        <a href="#">Experiences in collaborative projects enhanced my collaboration and communication skills. Working with project partners taught me to bring together different perspectives to generate innovative solutions.</a>
+                      </li>
+                    </ul>
+                    <div class="card-image">
+                      <img
+                      src="assets/images/3d-casual-life-group-of-young-people-discussing-something-while-working.png"
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </section>
+            </div>
+
+            <div class="mentorship-and-support-modal">
+              <section>
+                <ul class="services">
+                  <li class="card-large card-dark card-wide" id="serv-ux">
+                    <div class="card-image">
+                      <img
+                      src="assets/images/3d-casual-life-young-boys-and-young-girl-jumping.png"
+                      />
+                    </div>
+                    <ul>
+                      Mentorship and Support
+                      <li>
+                        <a href="#">Mentors and instructors at Le Wagon supported and guided me at every step.
+                          They worked one-on-one with me to simplify complex topics and enhance my learning process.
+                          This intensive and transformative experience has been pivotal in my career development. The education I received at Le Wagon laid a strong foundation, enabling me to confidently navigate future projects and technological challenges.</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </section>
+            </div>
+            <div class="diploma-lewagon-modal">
+              <section>
+                <h2>My Educational Credentials and Certifications</h2>
+                <ul class="services">
+                  <li class="card-large card-dark card-wide" id="serv-lewagon-diploma">
+                    <div class="card-image">
+                      <img
+                      src="assets/images/lewagon-diploma.png"
+                      />
+                    </div>
+                    <div class="card-image">
+                      <img
+                      src="assets/images/certificate-of-lewagon.png"
+                      />
+                    </div>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-filled-dark" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>

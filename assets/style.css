@@ -339,6 +339,29 @@ section.hero {
   display: inline-flex;
 }
 
+section.hero-lewagon {
+  /*    width: 100%;*/
+  height: auto;
+  /* background: linear-gradient(45deg, #45828c 0%, #a7d4d8 100%)
+    url("http://baharcerit.com/assets/images/3d-casual-life-surfing-the-web.png")
+    no-repeat center right; */
+  background: #eddaa9
+    url("http://baharcerit.com/assets/images/3d-casual-life-surfing-the-web.png")
+    no-repeat center right;
+  /* background-color: linear-gradient(45deg, #45828c 0%, #a7d4d8 100%); */
+  /* background-image: url("http://baharcerit.com/assets/images/3d-casual-life-surfing-the-web.png"); */
+  /* background-repeat: no-repeat; */
+  /* background-position: center right; */
+  background-size: 220px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  grid-gap: 30px;
+  display: inline-flex;
+}
+
 .btn-group {
   display: flex;
   flex-direction: row;
@@ -412,8 +435,12 @@ section.hero h1 {
 }
 
 #serv-js > .card-image {
-  background: linear-gradient(45deg, #deba37 0%, #dbc162 100%);
+  background: linear-gradient(30deg, #82f2e9 0%, #deba37 100%);
 }
+
+/* #serv-lewagon-diploma{
+content: ;
+} */
 
 #serv-sales > .card-image {
   background: linear-gradient(45deg, #eda9a9 0%, #7da8b8 100%);
@@ -433,6 +460,10 @@ section.hero h1 {
 
 .card-med > .card-image {
   box-shadow: var(--card-shadow);
+}
+
+.fa-brands {
+  color: #0a66c2;
 }
 
 .card-med > .card-image > img {
@@ -842,4 +873,32 @@ footer ul li {
     flex-direction: row;
     text-align: left;
   }
+}
+
+.navbar-lewagon {
+  justify-content: space-between;
+  /* background: white; */
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 60px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 16px;
+}
+
+.lewagon-introduction-modal {
+  font-family: "Poppins", sans-serif;
+  color: #45413e;
+}
+
+.technical-proficiencies-modal {
+  display: flex;
 }
