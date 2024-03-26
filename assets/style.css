@@ -342,18 +342,10 @@ section.hero {
 section.hero-lewagon {
   /*    width: 100%;*/
   height: auto;
-  /* background: linear-gradient(45deg, #45828c 0%, #a7d4d8 100%)
-    url("http://baharcerit.com/assets/images/3d-casual-life-surfing-the-web.png")
-    no-repeat center right; */
   background: #eddaa9
     url("http://baharcerit.com/assets/images/3d-casual-life-surfing-the-web.png")
     no-repeat center right;
-  /* background-color: linear-gradient(45deg, #45828c 0%, #a7d4d8 100%); */
-  /* background-image: url("http://baharcerit.com/assets/images/3d-casual-life-surfing-the-web.png"); */
-  /* background-repeat: no-repeat; */
-  /* background-position: center right; */
   background-size: 220px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -362,10 +354,77 @@ section.hero-lewagon {
   display: inline-flex;
 }
 
+section.hero-hacettepe {
+  /*    width: 100%;*/
+  height: auto;
+  background: linear-gradient(45deg, #b865a0 0%, #c4a7d8 100%),
+    url("http://baharcerit.com/assets/images/3d-casual-life-graduate-girl-jumping-and-holding-diploma.png")
+      no-repeat center right;
+  padding-right: 5px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  grid-gap: 20px;
+  display: inline-flex;
+}
+.px-3 {
+  padding-left: 3rem !important;
+}
+
+#hacettepe-logo img {
+  width: 150px; /* Örneğin, genişliği 200 piksel olarak belirleyin */
+  height: auto; /* Yüksekliği otomatik olarak ayarlamak için */
+}
+
+.paperclip-icon {
+  text-align: center; /* Ortalamak için */
+}
+
+.paperclip-icon a {
+  display: inline-block;
+  position: relative;
+  color: #000; /* İkon rengi */
+  text-decoration: none;
+}
+
+.paperclip-icon a:hover {
+  color: #db7f67;
+  border: 2px solid #f9f9f9;
+  background: #f9f9f9;
+}
+
+.paperclip-icon a:hover .fa-solid.fa-paperclip {
+  transform: scale(1.2); /* Hover efekti için büyüme */
+  transition: transform 0.3s ease; /* Geçiş efekti */
+}
+
+.fa-linkedin:before {
+  content: "\f08c";
+  font-size: 23px;
+}
+
 .btn-group {
   display: flex;
   flex-direction: row;
   grid-gap: 16px;
+}
+
+.btn-close:hover {
+  color: white !important;
+}
+
+#lets-explore-hobbybuddy-button {
+  background: none;
+  color: var(--light-01);
+  border: 2px solid var(--light-01);
+}
+
+#lets-explore-hobbybuddy-button:hover {
+  color: var(--text-01);
+  background: var(--light-01);
+  border: 2px solid var(--light-01);
 }
 
 .resume-button {
